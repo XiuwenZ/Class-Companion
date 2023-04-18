@@ -1,0 +1,207 @@
+:root {
+    --inputTextPlaceholder: #60788a;
+    --inputTextColor: rgb(233, 112, 100);
+    --taskElementText: #EEE;
+    --backgroundLook: rgba(0, 0, 0, 0.5);
+    --addTaskButton: rgb(231, 83, 69);
+    --trashCanColor: rgb(168, 74, 189);
+    --editIconColor: rgb(52, 201, 72);
+    --saveColor: rgb(253, 122, 255);
+    --homeColor: rgb(255, 255, 255);
+
+    /*White background fields*/
+    /*--inputTextPlaceholder: gray; 
+    --backgroundLook: white;
+    --inputTextColor: black;
+    --taskElementText: black;
+    --addTaskButton: black;
+    --trashCanColor: black;
+    */
+    
+    /* Transparent Look
+    --inputTextPlaceholder: rgba(0, 0, 0, 0.7); 
+    --backgroundLook: white;
+    --inputTextColor: black;
+    --taskElementText: black;
+    --addTaskButton: black;
+    --trashCanColor: black;
+    */
+}
+/*var(--white) to use*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/*The Above is applied to all elements by default*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+    background-image: url('colorkit5.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: white;
+    max-width: max-content;
+    display: inline-block;
+}
+
+#taskForm {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/*Input for the task*/
+#newTaskInput {
+    flex: 1 1 0%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--inputTextColor); /*Color of input text*/
+    background: var(--backgroundLook);
+
+    /* This is for a transparent look.
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 1.0);
+    border-radius: 20px;
+    backdrop-filter: blur(30px); was 20 before in all instances
+    margin-right: 1rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);*/
+
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/*Changing placeholder text color for empty field*/
+#newTaskInput::placeholder {
+    color: var(--inputTextPlaceholder);
+}
+
+/*Styling the add button*/
+#newTaskSubmit {
+    color: var(--addTaskButton);
+    font-size: 1.3rem;
+    font-weight: 500;
+    background: var(--backgroundLook);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/*Lowers opacity on hover*/
+#newTaskSubmit:hover {
+    opacity: 0.8;
+}
+
+/*Lowers opacity even more on click*/
+#newTaskSubmit:active {
+    opacity: 0.5;
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.taskList {
+    padding: 1rem;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background: var(--backgroundLook);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    
+    /* This is for a transparent look.
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+}
+
+#tasks .task .content {
+    flex: 1 1 0%;
+}
+#tasks .task .content .text {
+    color: var(--taskElementText);
+    font-size: 1.3rem;
+    width: 100%;
+    display: block;
+    font-weight: 500;
+}
+
+#tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+/* Buttons were replaced with icons so the font stuff is 
+affecting the shape of them. Fa icons are treated as text.*/
+.task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.task .actions button:hover {
+    opacity: 0.8;
+}
+
+.task .actions button:active {
+    opacity: 0.5;
+}
+
+/*fa icons are treated as text*/
+.fa-trash-can {
+    color: var(--trashCanColor);
+}
+
+.fa-pencil {
+    color: var(--editIconColor);
+}
+
+.fa-floppy-disk {
+    color: var(--saveColor);
+    font-size: 21px;
+}
+
+.homeButton {
+    font-size: 30px;
+    justify-content: right;
+    padding-left: 34rem; /*lazy workaround*/
+    color: var(--homeColor);
+}
