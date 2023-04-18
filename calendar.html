@@ -12,75 +12,99 @@
 	
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		  <div class="container-fluid">
-		    <a class="navbar-brand" href="index.html">
-		       <img src="cc.png" alt="Logo" id="logo"style="border:4px solid teal; width: 80px; height: auto;"> 
-		    </a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="collapse navbar-collapse " id="navbarResponsive">
-					<div class="ml-auto">
-			      <ul class="navbar-nav ms-auto">
-				<li class="nav-item">
-				  <a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" href="#" id="plannerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				    My Planner <span class="visually-hidden">Toggle Dropdown</span>
-				  </a>
-				  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="plannerDropdown">
-				    <li><a class="dropdown-item" href="StudentPlanner.html">Student Planner</a></li>
-					<li><a class="dropdown-item" href="todo.html">Tasks</a></li>
-				    <li><a class="dropdown-item" href="calendar.html">Calendar</a></li>
-
-				  </ul>
-				</li>
-
-			</div>
-		    </div>
-		  </div>
-		</nav>
 		
-    <div class="container">
-      <div class="calendar">
-        <div class="calendar-header">
-          <span class="month-picker" id="month-picker"> May </span>
-          <div class="year-picker" id="year-picker">
-            <span class="year-change" id="pre-year">
-              <pre><</pre>
-            </span>
-            <span id="year">2020</span>
-            <span class="year-change" id="next-year">
-              <pre>></pre>
-            </span>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="index.html">
+			<img src="cc.png" alt="Logo" id="logo" style="border: 4px solid teal; width: 80px; height: auto;">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ms-auto" style="font-size: 18px;">
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="plannerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  My Planner <span class="visually-hidden">Toggle Dropdown</span>
+				</a>
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="plannerDropdown">
+				  <li><a class="dropdown-item" href="StudentPlanner.html">Student Planner</a></li>
+				  <li><a class="dropdown-item" href="todo.html">Tasks</a></li>
+				  <li><a class="dropdown-item" href="calendar.html">Calendar</a></li>
+				</ul>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="StudentPlanner.html">Guest Login</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+		<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="container">
+            <div class="calendar">
+              <div class="calendar-header">
+                <span class="month-picker" id="month-picker">May</span>
+                <div class="year-picker" id="year-picker">
+                  <span class="year-change" id="pre-year">
+                    <pre><</pre>
+                  </span>
+                  <span id="year">2020</span>
+                  <span class="year-change" id="next-year">
+                    <pre>></pre>
+                  </span>
+                </div>
+              </div>
+              <div class="calendar-body">
+                  <div class="calendar-week-days">
+                      <div>Sun</div>
+                      <div>Mon</div>
+                      <div>Tue</div>
+                      <div>Wed</div>
+                      <div>Thu</div>
+                      <div>Fri</div>
+                      <div>Sat</div>
+                  </div>
+                  <div class="calendar-days"></div>
+              </div>  
+              <div class="calendar-footer"></div>
+              <div class="date-time-format">
+                <div class="day-text-format">Time:</div>
+                <div class="date-time-value">
+                  <div class="time-format">10:21:50</div>
+                  <div class="date-format">18 - december - 2020</div>
+                </div>
+              </div>
+              <div class="month-list"></div>
+            </div>
           </div>
         </div>
-        <div class="calendar-body">
-            <div class="calendar-week-days">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thu</div>
-                <div>Fri</div>
-                <div>Sat</div>
+    
+        <div class="col-sm-6">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h5>Anything Interesting Happened?</h5>
+                <br>
+                <textarea class="interest" placeholder="e.g. OMG I MET THE PRESIDENT!!!"></textarea>
+                <button onclick = "location.reload()">Save for today</button>
+              </div>
             </div>
-            <div class="calendar-days">
-            </div>
-        </div>  
-        <div class="calendar-footer">
-        </div>
-        <div class="date-time-format">
-          <div class="day-text-format">Time:</div>
-          <div class="date-time-value">
-            <div class="time-format">10:21:50</div>
-            <div class="date-format">18 - december - 2020</div>
           </div>
         </div>
-        <div class="month-list"></div>
       </div>
     </div>
+    
+    
+<script>
+  document.getElementById('refresh-button').addEventListener('click', function() {
+    location.reload();
+  });
+</script>
 </body>
 </html>
