@@ -7,3 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+function showAlert() {
+  alert("STAY TUNED FOR PERSONALIZED PLANNER FEATURE");
+}
