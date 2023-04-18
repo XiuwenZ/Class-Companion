@@ -16,7 +16,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-html,
+
 body {
   place-items: center;
   font-family: var(--font-family);
