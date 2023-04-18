@@ -1,0 +1,92 @@
+
+* {
+  font-size:15px;
+}
+.container {
+  padding:100px;
+  margin:auto;
+  width:500px;
+  border:none;
+  outline:none;
+}
+h1 {
+  font-size:55px;
+  text-align:center;
+}
+input[type=text],input[type=password] {
+  width:100%;
+  padding:30px 20px;
+  margin:8px 0;
+  display:inline-block;
+  border:none;
+  box-sizing:border-box;
+  border-radius:100px;
+}
+button {
+  background-color:#4CAF50;
+  color:white;
+  padding:14px 14px;
+  margin:8px 0;
+  border:none;
+  cursor:pointer;
+  width:45%;
+}
+.cancelbtn {
+  background-color:#b52f25;
+  float:left;
+  border-radius:100px;
+  box-shadow:0 7px rgba(0,0,0,0.3);
+  transition:.4s;
+}
+.cancelbtn:hover {
+  scale:110%;
+  background-color:#fa4b4b;
+  font-weight:600;
+  font-size:16px;
+  font-color:black;
+}
+.signupbtn {
+  float:right;
+  background-color:#03931f;
+  border-radius:100px;
+  box-shadow:0 7px rgba(0,0,0,0.3);
+  transition:.4s;
+}
+.signupbtn:hover {
+  scale:110%;
+  background-color:#07ce30;
+  font-weight:600;
+  font-size:16px;
+}
+.clearfix::after {
+  content:"";
+  clear:both;
+  display:table;
+}
+label input[type=checkbox] {
+  margin-top:10px;
+}
+a {
+  color:dodgerblue;
+  text-decoration:none;
+}
+hr {
+  border:none;
+  margin-bottom:16px;
+}
+body {
+  font-family:"Optima";
+  max-width:auto;
+  margin:auto;
+  text-align:center;
+  justify-content:space-around;
+  background-image:url(colorkit5.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  border:none;
+  outline:none;
+}
+form {
+  color:white;
+  border-radius:10px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WELCOME!</title>
+  <link href="beautify.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="/index.html">
+	       <img src="/cc.png" alt="Logo" id="logo"style="border:4px solid teal; width: 80px; height: auto;"> 
+	    </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse " id="navbarResponsive">
+				<div class="ml-auto">
+		      <ul class="navbar-nav ms-auto">
+		        <li class="nav-item">
+		          <a class="nav-link" href="/index.html">Home</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="plannerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            My Planner
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="plannerDropdown">
+		            <li><a class="dropdown-item" href="/Calendar/calendar.html">Calendar</a></li>
+		            <li><a class="dropdown-item" href="/ToDo/todo.html">To Do</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+				</div>
+	    </div>
+	  </div>
+	</nav>
+
+
+
+
+<form>
+  <div class="container">
+    <h1>CLASS COMPANION</h1>
+    <p>The best productivity tool known to the academic world.
+      Create a free account now!</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Set a Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+		<p>By creating an account you agree to our <a href="#" style="color: #FFFFFF">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+<!-- <script src="script.js"></script> -->
+	<script src="SignUpPageScript.js"></script>
+</body>
+</html>
