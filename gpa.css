@@ -1,0 +1,78 @@
+body {
+    font-family: Optima, sans-serif;
+    margin: 20px;
+    background-image: url(colorkit5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+   }
+   
+   
+   h1 {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+   }
+   
+   
+   label {
+    display: flex;
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+   }
+   
+   
+   input[type="number"],
+   select {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+   }
+   
+   
+   button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+   }
+   
+   
+   table {
+    width: 100%;
+    border-collapse: collapse;
+   }
+   
+   
+   table th, table td {
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+   }
+   
+   
+   table th {
+    background-color: #4CAF50;
+   }
+   
+   
+   #result, #course-table, #overall-gpa {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+   }
+   

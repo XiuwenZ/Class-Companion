@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="gpa.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="planner.css" rel="stylesheet"/>
+<title>Student Planner</title>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="cc.png" alt="Logo" id="logo" style="border: 4px solid teal; width: 80px; height: auto;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto" style="font-size: 18px;">
+  
+          <li class="nav-item"><a class="nav-link" href="todo.html">Tasks</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="gpa.html">GPA Calculator</a>
+          </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<h1>GPA Calculator</h1>
+<div>
+<label for="credit-input">Enter Course Credits:</label>
+<input type="number" id="credit-input">
+</div>
+<div>
+<label for="grade-select">Enter Letter Grade:</label>
+<select id="grade-select">
+<option value="4">A</option>
+<option value="3">B</option>
+<option value="2">C</option>
+<option value="1">D</option>
+<option value="0">F</option>
+</select>
+</div>
+<div id="course-table"></div>
+<div id="overall-gpa"></div>
+
+
+<div>
+
+
+<button onclick="calculateGPA()">Calculate</button>
+</div>
+<div id="result"></div>
+
+
+<script src="gpa.js"></script>
+</body>
+</html>
