@@ -1,3 +1,26 @@
+const calendarDays = document.querySelectorAll('.calendar-days div');
+
+calendarDays.forEach((day) => {
+  day.addEventListener('click', () => {
+    const date = day.textContent;
+    const textInput = document.querySelector('.interest');
+    textInput.value = date;
+    textInput.focus();
+  });
+});
+
+const textInput = document.querySelector('.interest');
+const value = textInput.value;
+const message = 'This is a temporary message.';
+
+textInput.innerHTML = `${value} ${message}`;
+
+setTimeout(() => {
+  textInput.innerHTML = value;
+}, 5000);
+
+
+
 const isLeapYear = (year) => {
   return (
     (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) ||
