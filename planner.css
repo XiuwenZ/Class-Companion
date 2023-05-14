@@ -64,6 +64,17 @@
 .two:hover{
     transform: translate(0, -100px) rotate(360deg) scale(0.5);
 }
+
+.three{
+    background: url(gpa4.png);
+    transform: translate(0, -100px) rotate(360deg) scale(0.5);
+    animation: animate 5s forwards;
+    transition: all .6s ease;
+}
+.three:hover{
+    transform: translate(0, -100px) rotate(360deg) scale(0.5);
+}
+
 @keyframes animate{
     0%{
         transform: translate(0, -100px) rotate(360deg) scale(0.5);
